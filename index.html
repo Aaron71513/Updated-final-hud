@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mark 4 HUD</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="hud">
+    <h1>MARK 4 HUD</h1>
+    <div id="time"></div>
+    <div id="date"></div>
+    <div id="weather">Weather: Loading...</div>
+    <div id="spotify">Spotify: Not Playing</div>
+    <div id="quote">"I'm going to have to science the sh*t out of this." – The Martian</div>
+    <div id="radar" class="rotate">Radar: Tracking Active</div>
+    <div id="weapons">
+      Weapons: <button onclick="activateWeapon('Repulsors')">Repulsors</button>
+      <button onclick="activateWeapon('Missiles')">Missiles</button>
+    </div>
+  </div>
+
+  <div id="target-screen" style="display:none;">
+    <h2>Targeting Mode</h2>
+    <div id="targets">[Target 1] [Target 2] [Target 3]</div>
+    <button onclick="exitTargetScreen()">Exit</button>
+  </div>
+
+  <audio id="bootSound" src="assets/boot.mp3" autoplay></audio>
+  <script src="script.js"></script>
+</body>
+</html>
